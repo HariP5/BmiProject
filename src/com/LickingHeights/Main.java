@@ -14,16 +14,11 @@ public class Main {
      float kilograms;
      float total;
 
+     Scanner keyboard;
 
+     //Initializing
 
-        Scanner keyboard;
-
-
-
-
-    //Initializing
-
-    keyboard = new Scanner(System.in);
+        keyboard = new Scanner(System.in);
 
     System.out.println("What is your name");
     name = keyboard.nextLine();
@@ -32,7 +27,9 @@ public class Main {
     meters = inches *(0.0254f);
     System.out.println("What is your weight in (pounds)?");
     pounds = keyboard.nextFloat();
-
+    kilograms = pounds *(0.453592f);
+    total = kilograms/(meters*meters);
+    System.out.println("Your total BMI is "+total+".");
 
 
     }
