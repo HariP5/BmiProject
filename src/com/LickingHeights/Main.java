@@ -29,6 +29,11 @@ public class Main {
     name = keyboard.nextLine();
     System.out.println("What is your height in (inches)?");
     inches = keyboard.nextInt();
+    meters = inches *(0.0254f);
+    System.out.println("What is your weight in (pounds)?");
+    pounds = keyboard.nextFloat();
+
+
 
     }
 }
